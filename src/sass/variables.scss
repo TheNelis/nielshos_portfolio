@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Switzer';
+    src: url(../assets/fonts/Switzer-Variable.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../assets/fonts/Satoshi-Variable.ttf) format('truetype');
+}
+
+
+$yellow: #FFD12D;
+$red: #F54C52;
+$green: #00BF72;
+$blue: #0C83E0;
+$white: #FFFFFF; //immune to darkmode
+$black: #141414; //immune to darkmode
+
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+body.darkmode {
+  --black: #FFFFFF;
+  --white: #141414;
+}
+
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+$unit-mobile: 20px; //1.79rem
+$unit-desktop: 2.5rem; //40px
+
+$sm: 567px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

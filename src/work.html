@@ -1,0 +1,27 @@
+---
+layout: layouts/base.html
+title: Work - Niels Hos
+---
+
+<div class="maincontainer">
+    <div class="maintitlecontainer__gridwrapper maintitlecontainer__gridwrapper--page">
+        <div class="maintitlecontainer title-load">
+            <h2>
+                <span class="textwrapper"><span>Selected</span></span>
+                <span class="textwrapper"><span>Work</span></span>
+            </h2>
+            <p class="textwrapper"><span>Carefully </br> picked by.. me</span></p>
+        </div>
+    </div>
+    <div class="selectedwork-block">
+        {% for project in collections.projects %}
+        {% SelectedWorkBlock {
+            title: project.data.name,
+            text: project.data.intro_short,
+            image: project.data.image,
+            url: project.url,
+            pills: project.data.categories_short
+        } %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,105 @@
+---
+layout: layouts/base.html
+title: Slokkie - Niels Hos
+
+name: Slokkie
+year: 2023
+featured: false
+size: small
+
+intro_short: >
+  Designed posters and stickers for the Slokkie campaign, aiming to motivate daily water intake.
+
+intro: >
+  Designed posters and stickers for the Slokkie campaign to raise awareness about dehydration and 
+  promote daily water intake. Focused on creating clear and engaging visuals that motivate a wide 
+  audience to stay hydrated.
+
+categories_short:
+  - label: Ideation
+    color: green
+  - label: Problem framing
+    color: green
+  - label: Poster design
+    color: red
+
+categories:
+  - label: Ideation
+    color: green
+  - label: Creative direction
+    color: green
+  - label: Problem framing
+    color: green
+  - label: Poster design
+    color: red
+  - label: Illustration
+    color: red
+
+image: /assets/images/slokkie/slokkie.jpg
+external_url:
+---
+
+<div class="maincontainer project">
+	<div class="maintitlecontainer__gridwrapper maintitlecontainer__gridwrapper--page">
+		<div class="maintitlecontainer title-load">
+			<h2>
+				<span class="textwrapper"><span>{{ name }}</span></span>
+			</h2>
+		</div>
+	</div>
+	
+	
+	<div class="infocontainer lazy-load">
+		<div>
+			<h2 class="infocontainer__subtitle">Year</h2>
+			<p class="infocontainer__year">{{ year }}</p>
+		</div>
+		
+		<div>
+			<h2 class="infocontainer__subtitle">Summary</h2>
+			<p>{{ intro }}</p>
+			{% if external_url %}
+			<a href="{{ external_url }}" target="_blank" class="magnetic-button infocontainer__link" data-strength="0.25">
+				<span class="magnetic-filler magnetic-filler--red"></span>
+				<span class="magnetic-text">
+					<span class="magnetic-text-inner infocontainer__link__inner">
+						<span>Visit site</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+							<path d="M22.5991 6.36868V22.5987M22.5991 22.5987H6.36901M22.5991 22.5987L1.5 1.5" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</span>
+				</span>
+			</a>
+			{% endif %}
+		</div>
+		
+		<div>
+			<h2 class="infocontainer__subtitle">Services</h2>
+			<div class="pillcontainer">
+				{% for pill in categories %}
+				<p class="pill pill-lazy-load pill--{{ pill.color }}">{{ pill.label }}</p>
+				{% endfor %}
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="content">
+		<div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/slokkie/slokkie.jpg" alt="" class="lazy-load">
+		</div>
+		
+		<div class="content__dualimg lazy-load">
+			<img src="/assets/images/slokkie/slokkie.jpg" alt="">
+			<img src="/assets/images/slokkie/slokkie.jpg" alt="">
+		</div>
+		
+		<div class="content__textblock lazy-load">
+			<h3>The overall style</h3>
+			<p>
+				As part of the launch, designed and developed a new website that brings their 
+				creative vision to life.
+			</p>
+		</div>
+	</div>
+</div>

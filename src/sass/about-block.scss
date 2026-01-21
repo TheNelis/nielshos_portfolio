@@ -1,0 +1,77 @@
+@use './variables.scss' as v;
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    gap: v.$unit-mobile;
+    padding: 4rem v.$unit-mobile;
+
+    @media only screen and (min-width:v.$md){
+        flex-direction: row;
+        padding: 6rem v.$unit-mobile;
+    }
+
+    @media only screen and (min-width:v.$lg){
+        display: grid;
+        grid-template-columns: 2fr 18fr 14fr;
+        gap: v.$unit-desktop;
+        padding: 8rem v.$unit-desktop; // 128px top bottom
+    }
+
+    &__main {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        max-width: 450px;
+
+        @media only screen and (min-width:v.$md){
+            max-width: 60%;
+        }
+
+        @media only screen and (min-width:v.$lg){
+            max-width: none;
+        }
+        
+        &__intro {
+            font-size: 2rem;
+
+            @media only screen and (min-width:v.$md){
+                padding-right: v.$unit-mobile;
+            }
+
+            @media only screen and (min-width:v.$lg){
+                font-size: 2.5rem;
+                padding-right: v.$unit-desktop;
+            }
+        }
+    }
+
+    &__side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4rem;
+        max-width: 450px;
+
+        @media only screen and (min-width:v.$md){
+            gap: v.$unit-mobile;
+            padding-top: 4.1rem;
+            max-width: none;
+        }
+        
+        @media only screen and (min-width:v.$lg){
+            gap: v.$unit-desktop;
+            padding-top: 4.375rem;
+        }
+
+        p {            
+            @media only screen and (min-width:v.$lg){
+                max-width: 60%;
+            }
+        }
+    }
+}

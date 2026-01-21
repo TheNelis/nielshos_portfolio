@@ -1,0 +1,239 @@
+@use './variables.scss' as v;
+
+.noscroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.lazy-load {
+    opacity: 0;
+    transform: translateY(5%);
+    transition: all 0.6s ease;
+}
+
+.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(/assets/noise2.gif);
+    opacity: calc(1.5 / 100);
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    pointer-events: none;
+}
+
+.maincontainer {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+html, body {
+    background-color: var(--white);
+    font-size: 11.2px;
+
+    @media only screen and (min-width:v.$lg){
+        font-size: 0.94vw;
+    }
+
+    @media only screen and (min-width: 1700px){
+        font-size: 1rem;
+    }
+}
+
+*::selection {
+    color: var(--white);
+    background-color: v.$yellow;
+}
+
+ul, li, a, p {
+    font-weight: v.$regular;
+    line-height: 130%;
+}
+
+ul, li, a, h1, h2, h3, h4, p {
+    font-family: 'Switzer';
+    color: var(--black);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    line-height: 80%;
+}
+
+h3 {
+    font-size: 1.75rem; // 28px
+}
+
+h2 {
+    font-size: 2.5rem; // 40px
+}
+
+h1 {
+    font-size: 3rem; // 48px
+}
+
+ul, li, p {
+    font-size: clamp(16px, 1.5rem, 500px); // 24px
+    line-height: 130%;
+
+    strong {
+        font-weight: v.$bold;
+    }
+}
+
+button {
+    font-family: 'Satoshi';
+}
+
+
+.maintitlecontainer {
+    grid-column: 2/4;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    column-gap: calc(v.$unit-mobile / 2);
+
+    @media only screen and (min-width:v.$lg){
+        column-gap: calc(v.$unit-desktop / 2);
+    }
+
+    &__gridwrapper {
+        padding: 4rem v.$unit-mobile 3rem;
+
+        @media only screen and (min-width:v.$md){
+            padding: 6rem v.$unit-mobile 4rem;
+        }
+
+        @media only screen and (min-width:v.$lg){
+            display: grid;
+            grid-template-columns: 2fr 18fr 14fr;
+            gap: v.$unit-desktop;
+            padding: 8rem v.$unit-desktop 6.25rem; // 128px top 100px bottom
+        }
+
+        &--page {
+            padding: 12rem v.$unit-mobile 3rem;
+
+            @media only screen and (min-width:v.$lg){
+                padding: 12.5rem v.$unit-desktop 6.25rem; // 200px top 100px bottom
+            }
+        }
+    }
+
+    h2 {
+        display: contents;
+
+        .textwrapper {
+            display: block;
+            overflow: hidden;
+
+            span {
+                display: block;
+                font-family: "Switzer";
+                font-weight: v.$bold;
+                font-size: 5rem;
+                line-height: 80%;
+                text-transform: uppercase;
+                margin: 0;
+                word-wrap: break-word;
+
+                opacity: 0;
+                transform: translateY(100%);
+
+                @media only screen and (min-width:v.$md){
+                    font-size: 6.5rem;
+                }
+
+                @media only screen and (min-width:v.$lg){
+                    font-size: 8rem;
+                }
+            }
+
+            &:first-child {
+                width: 100%;
+            }
+        }
+    }
+
+    .textwrapper {
+        display: block;
+        overflow: hidden;
+
+        span {
+            display: block;
+            font-size: 1.125rem;
+            font-family: "Satoshi";
+            font-weight: v.$bold;
+            text-transform: uppercase;
+            line-height: 100%;
+            margin: 10px 0 3px;
+
+            opacity: 0;
+            transform: translateY(100%);
+
+            @media only screen and (min-width:v.$md){
+                font-size: 1.25rem;
+            }
+            
+            @media only screen and (min-width:v.$lg){
+                font-size: clamp(14px, 1.125rem, 100px);
+            }
+        }
+
+        &:first-child {
+            width: 100%;
+        }
+    }
+}
+
+
+.pill {
+    display: inline-block;
+    border-radius: 200px;
+    padding: 0.375rem 1.5rem 0.5rem; // 6px 24px 8px
+
+    font-family: 'Satoshi';
+    font-weight: v.$medium;
+    font-size: clamp(14px, 1.375rem, 100px);
+    color: v.$white;
+
+    &-lazy-load {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease-out;
+    }
+
+    &--big {
+        padding: 0.5rem 1.5rem 0.75rem; // 8px 24px 12px
+        font-size: 1.75rem;
+    }
+
+    &--green {
+        background-color: v.$green;
+    }
+
+    &--red {
+        background-color: v.$red;
+    }
+
+    &--blue {
+        background-color: v.$blue;
+    }
+
+    &--outline--white {
+        background-color: transparent;
+        border: 2px solid v.$white;
+    }
+
+    &--outline--black {
+        background-color: transparent;
+        border: 2px solid v.$black;
+    }
+}

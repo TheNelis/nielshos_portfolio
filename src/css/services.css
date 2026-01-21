@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Switzer";
+  src: url(../assets/fonts/Switzer-Variable.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi-Variable.ttf) format("truetype");
+}
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+body.darkmode {
+  --black: #FFFFFF;
+  --white: #141414;
+}
+
+.services-block {
+  padding-bottom: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .services-block {
+    padding-bottom: 6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .services-block {
+    padding-bottom: 8rem;
+  }
+}
+.services-block__block {
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .services-block__block {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .services-block__block {
+    display: grid;
+    grid-template-columns: 2fr 18fr 14fr;
+    gap: 2.5rem;
+    padding: 2.5rem;
+  }
+}
+.services-block__block__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 2px solid var(--black);
+}
+.services-block__block__wrapper:first-child {
+  border-top: 2px solid var(--black);
+}
+.services-block__block__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--black);
+  border-radius: 100%;
+  flex-shrink: 0;
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-size: clamp(14px, 1.25rem, 100px);
+  line-height: 100%;
+  text-align: center;
+}
+.services-block__block h3 {
+  font-size: 3.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .services-block__block h3 {
+    flex: 1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .services-block__block h3 {
+    font-size: 4rem;
+  }
+}
+.services-block__block__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+@media only screen and (min-width: 768px) {
+  .services-block__block__info {
+    flex: 1;
+    max-width: none;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .services-block__block__info {
+    gap: 2.5rem;
+    padding-right: 80px;
+  }
+}
+.services-block__block__info .pillcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
