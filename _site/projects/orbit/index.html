@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" href="/assets/favicon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/assets/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/assets/favicon.ico" sizes="any">
+
+    <link rel="stylesheet" href="/css/all-styles.css">
+
+    <!-- Lenis -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+    <script src="/js/lenis.js"></script>
+
+    <meta name="description" content="Portfolio of Niels Hos, a concept-driven designer and developer creating human-centered digital experiences through strategy, design and code.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Niels Hos • Concept-driven Designer & Developer">
+    <meta property="og:description" content="Portfolio of Niels Hos, a concept-driven designer and developer creating human-centered digital experiences through strategy, design and code.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/images/portretfoto_niels.jpeg">
+    <meta property="og:url" content="https://nielshos.nl">
+
+    <title>Orbit - Niels Hos</title>
+</head>
+<body>
+
+    <div class="navbar__wrapper">
+        <nav class="navbar">
+            <a class="navbar__logo navbar__logo--desktop" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="0 0 1570 811"><path d="M0 0h1546.03v810.945H0z" style="fill:none"/><clipPath id="a"><path d="M0 0h1546.03v810.945H0z"/></clipPath><g clip-path="url(#a)">
+                    <path class="logo-text" d="M539.135 601.26v100.345H361.456V471.667H177.679v21.571a4059 4059 0 0 0-22.434 44.942c-20.727 42.154-35.204 73.293-35.355 73.615-13.27 28.309-25.703 55.956-36.169 79.74a4596 4596 0 0 0-4.416 10.07H0V109.34h177.679v218.615h183.777V109.34h177.679v101.086a259 259 0 0 1 23.586-29.182c22.222-23.731 48.818-43.061 79.344-57.531 12.347 14.851 44.322 72.934 56.516 139.017.894 4.844 2.126 9.84 3.171 15.103-23.18 29.236-35.512 73.063-35.512 128.51 0 80.918 26.7 136.676 75.369 158.207 8.438 3.733 17.536 6.437 27.27 8.065 7.245 1.212 14.842 1.827 22.782 1.827 50.311 0 86.888-24.722 107.143-69.207 7.878-17.3 13.287-37.589 16.075-60.576 1.461-12.045 2.203-24.831 2.203-38.316 0-38.181-5.848-70.851-17.058-97.042-2.252-16.566-4.902-33.649-8.039-50.846-5.384-29.518-12.202-59.361-20.861-87.538-5.699-18.546-15.244-46.593-30.423-75.291 87.656 10.453 156.512 49.48 201.029 111.329 32.968-68.174 111.705-114.164 227.33-114.164 21.879 0 43.402 1.781 64.131 5.45a4639 4639 0 0 1-5.504 10.664c-15.962 30.829-35.281 67.907-58.959 111.02a4579 4579 0 0 1-4.354 7.907q-1.56-.039-3.153-.039c-32.226 0-54.872 14.807-54.872 38.323 0 14.198 6.708 24.577 18.239 32.601 6.179 4.3 13.743 7.923 22.403 11.095 25.578 9.368 60.71 14.796 97.916 22.085 8.237 1.614 16.576 3.318 24.936 5.177 86.982 19.344 176.188 55.376 176.188 179.013 0 127.162-107.131 202.067-253.455 202.067-43.07 0-82.824-5.823-117.975-17.638a819 819 0 0 0 8.493-11.085c14.547-19.322 25.823-36.104 25.947-36.291 10.289-15.531 24.724-38.164 42.47-68.894a775 775 0 0 0 4.536-7.955c11.309 4.532 24.172 6.861 38.271 6.861 46.162 0 69.678-16.549 69.678-45.291 0-27.523-24.778-41.831-60.95-52.584-7.596-2.258-15.693-4.359-24.169-6.393-35.432-8.503-77.476-15.83-117.083-28.514-8.19-2.624-16.277-5.476-24.179-8.615-13.612-5.408-26.678-11.667-38.787-19.073-1.038 29.211-4.875 56.629-11.344 82.082a331 331 0 0 1-5.176 18.195c-8.676 27.465-20.61 52.404-35.562 74.575-22.354 33.145-51.454 60.101-86.503 80.057-39.664 22.585-86.947 36.203-140.694 39.676a430 430 0 0 1-27.888.887c-112.918 0-200.268-42.201-252.526-116.894m846.664-303.789c11.23-28.407 25.702-65.971 42.093-111.021a3289 3289 0 0 0 15.456-43.503c45.655 33.243 77.557 83.889 85.263 154.524z"/>
+                    <path class="logo-swirl" d="M314.469 300.872a2158 2158 0 0 1 10.697-16.762c1.092-1.692 4.484-6.952 9.207-14.14q1.003-1.528 2.083-3.165v36.15h-23.302zM487.997 82.257c52.083-46.732 90.107-63.595 113.67-71.603 68.483-23.276 140.069-8.392 191.544 57.14a225 225 0 0 1 2.209 2.859c5.558 7.316 10.618 14.896 15.222 22.548q.456.758.906 1.517c18.504 31.196 29.481 63.372 35.679 83.542 8.376 27.256 14.956 56.128 20.164 84.681 3.313 18.164 6.07 36.199 8.382 53.607.75 5.645 1.452 11.224 2.112 16.721 2.8 23.339 4.821 45.182 6.349 64.228.162 1.415.317 3.129.576 5.585q1.23 11.66 2.52 22.615a266 266 0 0 1-1.405 15.45c-2.393 19.72-6.907 37.16-13.665 52.002-15.243 33.476-42.738 52.126-80.599 52.126-6.263 0-12.256-.472-17.971-1.427a89 89 0 0 1-11.184-2.603c-8.657-46.061-14.113-90.478-17.695-124.196-.429-2.856-2.202-25.249-3.699-40.348-3.436-34.636-7.562-63.922-12.009-88.739l-.415-2.298a758 758 0 0 0-5.7-28.349c-8.341-37.596-22.443-85.287-56.072-142.22-5.221-8.839-21.531-25.005-43.829-13.748s-40.146 22.409-56.868 36.381V82.24s-19.375.017-27.084.017zm872.192 18.125c3.498-6.84 6.805-13.349 9.909-19.494 19.767-39.132 31.306-63.466 31.554-63.95.805-1.569 1.449-3.221 2.414-4.707.868-1.334 5.818-8.95 16.754-11.489 5.323-1.235 9.777-.584 10.617-.461 5.556.813 9.565 3.166 10.313 3.604 1.406.825 9.416 5.525 12.107 15.876 1.311 5.04.637 9.253.51 10.048-.117.728-.254 1.588-2.563 8.877-4.943 15.609-12.711 39.363-21.761 66.038a4090 4090 0 0 1-6.909 20.198l-1.423 4.119c-5.595 16.164-11.465 32.788-17.313 48.861-18.13 49.833-33.899 90.452-45.495 119.569l-.184.46a3822 3822 0 0 1-3.367 8.424q-2.626-.525-5.238-1.036c-33.621-6.586-65.514-11.399-89.583-19.459 2.088-3.715 3.809-6.782 5.135-9.122a3925 3925 0 0 0 24.974-44.778c23.794-43.323 43.208-80.581 59.248-111.56a4621 4621 0 0 0 8.568-16.632zm-211.656 592.786c-6.23 7.753-11.336 13.753-15.128 18.082-3.672 4.192-6.111 6.815-7.142 7.939-47.894 52.256-84.259 71.347-108.17 80.559-59.456 22.903-126.255 12.095-175.876-49a213 213 0 0 1-4.497-5.735c51.854-5.331 97.789-19.775 136.955-42.075 39.002-22.207 71.377-52.213 96.252-89.096 16.464-24.412 29.64-51.856 39.193-82.097a354 354 0 0 0 2.489-8.224c5.101-7.255 9.464-13.606 13.004-18.757q1.452-2.115 2.718-3.951a1655 1655 0 0 0 18.193-26.958 452 452 0 0 0 7.01 2.307c38.006 12.173 78.207 19.552 112.891 27.61a2068 2068 0 0 1-19.457 37.109 1574 1574 0 0 1-7.691 14.139c-1.817 3.296-3.386 6.11-4.707 8.46a761 761 0 0 1-4.708 8.263c-17.41 30.148-31.569 52.353-41.663 67.59-.12.181-11.021 16.391-25.077 35.061a766 766 0 0 1-14.589 18.774M316.782 498.75c-10.669 15.756-18.567 27.699-22.914 34.182-36.012 53.703-65.662 100.856-91.189 142.308a8521 8521 0 0 0-9.846 16.033 4354 4354 0 0 0-21.414 35.332c-23.805 39.7-38.219 65.214-39.65 67.723l.01-.021c-1.021 1.656-1.872 3.417-3.06 4.97-1.069 1.394-7.165 9.354-19.372 11.285-5.942.94-10.764-.121-11.674-.321-1.813-.398-12.306-2.706-18.867-12.892-6.437-9.995-4.109-19.588-3.701-21.268.19-.784.463-1.909 3.593-9.456 3.231-7.789 9.166-21.888 17.002-40.02q1.156-2.677 2.368-5.467a27.1 27.1 0 0 0 6.055-8.69 4155 4155 0 0 1 4.387-10.004c10.389-23.609 22.73-51.052 35.903-79.153.15-.32 14.537-31.267 35.136-73.16a4022 4022 0 0 1 22.284-44.64 27 27 0 0 0 2.363-6.741z"/></g>
+                </svg>
+            </a>
+            <a class="navbar__logo navbar__logo--mobile" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="0 0 868 811"><g transform="translate(-13073.25 -342.52)"><path d="M13073.2 342.52h867.357v810.985H13073.2z" style="fill:none"/><clipPath id="a"><path d="M13073.2 342.52h867.357v810.985H13073.2z"/></clipPath><g clip-path="url(#a)">
+                    <path class="logo-text" d="M13153.941 726.132V359.43h184.718c-36.128 37.243-73.086 100.522-95.85 147.914-.562 1.172-5.567 10.76-7.366 14.495-5.42 11.248-16.107 33.736-30.268 67.153-12.062 28.454-29.52 74.934-33.084 84.912a3054.077 3054.077 0 0 0-18.15 52.227Zm447.103-80.029h26.866V359.431h232.989v11.655c-3.785 11.296-12.762 37.886-25.58 74.217a6247.768 6247.768 0 0 1-7.358 20.713c-9.79 27.42-27.948 78.963-53.252 144.92-5.021 13.087-28.022 75.462-57.549 145.488-4.11 9.767-14.585 35.648-29.405 68.838-4.965 11.11-15.74 36.153-30.31 65.72-2.449 4.982-13.298 28.511-27.11 53.009-.024-.065-.032-.106-.04-.122a700.764 700.764 0 0 1-2.385-12.038V834.55h-10.93l-15.936-188.446Zm259.855 209.834v280.12h-139.784c16.628-15.61 35.77-39.651 59.462-80.59 6.536-11.296 11.33-21.054 11.338-21.063 3.296-6.56 9.245-18.605 16.896-35.794 8.057-18.092 14.275-33.548 14.291-33.589 3.248-8.334 9.457-24.457 17.45-47.09.716-2.035 5.884-16.701 8.798-25.524 3.565-10.816 7.699-23.96 11.549-36.47Zm-438.541-21.388h-35.428v301.509h-232.63c.22-.554.447-1.107.675-1.66.212-.505 9.042-23.546 24.115-60.797a5035.871 5035.871 0 0 1 16.506-40.303c12.509-30.212 33.8-81.958 62.75-146.808 5.835-13.07 32.774-75.422 66.876-144.642 5.217-10.605 17.327-35.99 34.183-68.13 5.469-10.442 14.975-28.998 27.525-51.299v23.684h19.435l15.993 188.446Z"/>
+                    <path class="logo-swirl" d="M13433.324 618.975c-4.76-38.63-9.62-62.51-12.85-77.23-1.87-8.53-4-11.53-6.42-11.29-2.88.28-6.18 5.15-9.96 10.78-6.36 9.47-12.19 18.8-17.17 27.04-7.72 12.78-13.38 22.95-15.75 27.03-16.65 28.67-29.15 53.13-35.8 65.82-17 32.42-29.23 58.04-34.5 68.74-34.32 69.67-61.43 132.42-67.3 145.57-29.09 65.14-50.48 117.13-63.05 147.48-6.14 14.82-11.69 28.42-16.59 40.51-15.01 37.09-23.8 60.04-24.01 60.54-.75 1.8-1.32 3.69-2.24 5.4-.16.29-.44.82-.88 1.51-1.92 3.1-6.79 9.49-16.1 12.35-5.55 1.7-10.3 1.25-11.2 1.16-.01 0-5.76-1.13-5.76-1.13-1.79-.75-3.67-1.33-5.38-2.26-1.54-.83-10.31-5.59-13.83-16.98-1.71-5.55-1.27-10.3-1.19-11.19.07-.77.16-1.69 1.98-9.46 6.35-27.03 20.04-82.8 32.74-130.01 6.85-25.46 13.18-48.25 18.74-67.89 8.36-29.5 14.98-51.89 19.05-65.53.03-.09 3.22-10.57 8.08-26.08 2.29-7.28 4.94-15.68 7.81-24.62 16.04-50.05 28.61-85.85 35.88-106.19 3.51-9.8 20.67-55.5 32.53-83.46 13.91-32.83 24.4-54.92 29.72-65.97 1.81-3.74 6.82-13.35 7.39-14.52 26.66-55.52 72.91-135.631 113.47-159.661 11.58-6.86 22.66-11.56 33.32-14.23 32.29-8.09 60.68 2.44 87.24 27.86 23.47 22.46 36.45 70.52 53.08 146.37 3.99 18.17 7.33 39.09 7.88 42.51 2.66 16.66 7.22 57.03 7.22 57.03l20.52 242.701c2.95 24.88 6.5 49.63 10.78 72.68.95 5.1 1.93 10.12 2.96 15.03.16.79 8.92 41.31 19.01 43.54 1.69.37 3.43.14 5.16-.55 12.11-4.83 24.38-32.11 25.17-33.5 14.59-25.68 26.14-50.69 28.71-55.9 14.77-29.99 25.71-55.38 30.74-66.65 14.93-33.44 25.49-59.52 29.64-69.36 29.68-70.42 52.82-133.15 57.87-146.31 25.41-66.23 43.64-117.98 53.47-145.52 2.59-7.23 5.05-14.18 7.39-20.81 14.92-42.271 24.66-71.431 27.13-78.821.37-1.1.57-1.72.61-1.83.59-1.67 1.02-3.41 1.77-5.02.68-1.44 4.54-9.67 14.73-13.42 4.95-1.83 9.3-1.65 10.11-1.61.02 0 5.3.74 5.3.75 1.67.59 3.4 1.02 4.99 1.78 1.44.68 9.64 4.56 13.4 14.74 1.83 4.95 1.67 9.28 1.64 10.1-.03.74-.05 1.38-1.37 9.1-6.81 39.85-16.63 92.76-23.09 125.01-12.25 61.1-22.5 107.28-28.09 132.05l-.65 2.86c-.01.05-7.71 33.16-17.91 73.4-3.07 12.15-5.95 23.24-8.57 33.21a3193.88 3193.88 0 0 1-13.56 50.011c-2.73 9.74-14.97 50.66-23.75 77.28-2.85 8.64-7.92 22.99-8.62 24.99-7.85 22.23-13.95 38.07-17.14 46.26-.02.04-6.02 14.95-13.8 32.41-7.41 16.64-13.17 28.31-16.36 34.66 0 .01-4.47 9.11-10.57 19.65-36.48 63.02-60.18 82.06-81.84 94.18-3.43 1.92-6.81 3.66-10.19 5.38-22.42 11.44-44.07 14.1-64.29 10.68-21.78-3.68-41.9-14.43-59.57-28.89-28.36-23.21-52.81-64.58-70.18-145.77-3.82-17.84-7.2-38.81-7.75-42.19-3.37-20.9-6.57-47.35-9.35-73.6l-20.6-242.7Z"/></g></g>
+                </svg>
+            </a>
+            <div class="navbar__buttoncontainer">
+                <a href="/" target="_self" class="magnetic-button " data-strength="0.25">
+    <span class="magnetic-filler magnetic-filler--red"></span>
+    <span class="magnetic-text">
+        <span class="magnetic-text-inner">
+            <span>Home</span>
+            
+        </span>
+    </span>
+</a>
+                <a href="/work" target="_self" class="magnetic-button " data-strength="0.25">
+    <span class="magnetic-filler magnetic-filler--green"></span>
+    <span class="magnetic-text">
+        <span class="magnetic-text-inner">
+            <span>Work</span>
+            
+        </span>
+    </span>
+</a>
+                <a href="/about" target="_self" class="magnetic-button " data-strength="0.25">
+    <span class="magnetic-filler magnetic-filler--blue"></span>
+    <span class="magnetic-text">
+        <span class="magnetic-text-inner">
+            <span>About</span>
+            
+        </span>
+    </span>
+</a>
+                <a href="#contact" target="_self" class="magnetic-button magnetic-button--filled contact-button" data-strength="0.25">
+    <span class="magnetic-filler magnetic-filler--red"></span>
+    <span class="magnetic-text">
+        <span class="magnetic-text-inner">
+            <span>Contact</span>
+            
+        </span>
+    </span>
+</a>
+            </div>
+        </nav>
+    </div>
+
+    <button class="darkmode-switch" id="darkmode-switch" aria-label="darkmode switch">
+        <div class="darkmode-switch__switch"></div>
+    </button>
+
+
+    
+<div class="maincontainer project">
+	<div class="maintitlecontainer__gridwrapper maintitlecontainer__gridwrapper--page">
+		<div class="maintitlecontainer title-load">
+			<h2>
+				<span class="textwrapper"><span>Orbit - Love in Motion</span></span>
+			</h2>
+		</div>
+	</div>
+	
+	
+	<div class="infocontainer lazy-load">
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Year</h2>
+			<p class="infocontainer__year">2026</p>
+		</div>
+		
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Summary</h2>
+			<p>Orbit is my graduation project, developed over several months of research and exploration. The project focuses on helping couples plan spontaneous dates and create shared moments together, to keep the romance in their relationship. Multiple concepts were explored from different angles before arriving at the final direction shown on the website/app.
+</p>
+			
+			<a href="https://weorbit.app" target="_blank" class="magnetic-button infocontainer__link" data-strength="0.25">
+				<span class="magnetic-filler magnetic-filler--red"></span>
+				<span class="magnetic-text">
+					<span class="magnetic-text-inner infocontainer__link__inner">
+						<span>Visit site</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+							<path d="M22.5991 6.36868V22.5987M22.5991 22.5987H6.36901M22.5991 22.5987L1.5 1.5" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</span>
+				</span>
+			</a>
+			
+		</div>
+		
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Services</h2>
+			<div class="pillcontainer">
+				
+				<p class="pill pill-lazy-load pill--green">Research &amp; Insights</p>
+				
+				<p class="pill pill-lazy-load pill--green">User research</p>
+				
+				<p class="pill pill-lazy-load pill--green">Ideation</p>
+				
+				<p class="pill pill-lazy-load pill--green">Problem framing</p>
+				
+				<p class="pill pill-lazy-load pill--green">Human-centered</p>
+				
+				<p class="pill pill-lazy-load pill--red">App design</p>
+				
+				<p class="pill pill-lazy-load pill--red">UX/UI</p>
+				
+				<p class="pill pill-lazy-load pill--red">Figma</p>
+				
+				<p class="pill pill-lazy-load pill--red">User testing</p>
+				
+				<p class="pill pill-lazy-load pill--red">Logo design</p>
+				
+				<p class="pill pill-lazy-load pill--blue">Laravel</p>
+				
+				<p class="pill pill-lazy-load pill--blue">Full-stack development</p>
+				
+				<p class="pill pill-lazy-load pill--blue">SEO</p>
+				
+				<p class="pill pill-lazy-load pill--blue">Databases</p>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/orbit/orbit-3.jpg" alt="" class="lazy-load">
+		</div>
+
+    <div class="content__textblock lazy-load">
+			<h3>Research & concept development</h3>
+			<p>
+				The project started with lots of research and interviews with couples and a relationship therapist.
+        Insights from this phase led to several unique concept directions, which were tested and iterated over time.
+        This process helped shape Orbit into a focused and considered solution.
+			</p>
+		</div>
+
+		<div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/orbit/orbit-0.jpg" alt="" class="lazy-load">
+		</div>
+
+    <div class="content__textblock lazy-load">
+			<h3>Design & experience</h3>
+			<p>
+				Orbit was designed to make planning moments together feel simple and enjoyable.
+        The interface and interactions aim to support connection, without feeling forced or overly complex.
+        The final result reflects the full journey from research to concept to finished product.
+			</p>
+		</div>
+    
+		<div class="content__dualimg lazy-load">
+			<img src="/assets/images/orbit/orbit-4.jpg" alt="">
+			<img src="/assets/images/orbit/orbit-2.jpg" alt="">
+		</div>
+
+    <div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/orbit/orbit-1.jpg" alt="" class="lazy-load">
+		</div>
+	</div>
+</div>
+
+
+    <div class="footer__wrapper" id="contact">
+        <footer class="footer">
+            <h2 class="title-load">
+                <span class="textwrapper"><span>I'm ready</span></span>
+                <span class="textwrapper"><span>are you?</span></span>
+            </h2>
+            <div class="pillcontainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M22.5991 6.36868V22.5987M22.5991 22.5987H6.36901M22.5991 22.5987L1.5 1.5" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <div>
+                    <a href="https://www.instagram.com/nielshosdesign/" target="_blank" class="magnetic-button magnetic-button magnetic-button--footer" data-strength="0.5">
+    <span class="magnetic-filler magnetic-filler--white"></span>
+    <span class="magnetic-text">
+        <span class="magnetic-text-inner">
+            <span>Instagram</span>
+            
+        </span>
+    </span>
+</a>
+                    <div></div>
+                    <a href="https://nl.linkedin.com/in/niels-hos-452932230" target="_blank" class="magnetic-button magnetic-button magnetic-button--footer" data-strength="0.5">
+    <span class="magnetic-filler magnetic-filler--white"></span>
+    <span class="magnetic-text">
+        <span class="magnetic-text-inner">
+            <span>LinkedIn</span>
+            
+        </span>
+    </span>
+</a>
+                    <a href="https://github.com/TheNelis" target="_blank" class="magnetic-button magnetic-button magnetic-button--footer" data-strength="0.5">
+    <span class="magnetic-filler magnetic-filler--white"></span>
+    <span class="magnetic-text">
+        <span class="magnetic-text-inner">
+            <span>Github</span>
+            
+        </span>
+    </span>
+</a>
+                </div>
+            </div>
+            
+            <div class="footer__buttoncontainer">
+                <a href="mailto:nielshosdesign@gmail.com" class="footer__buttoncontainer__button">
+                    <span>Get in touch</span>
+                </a>
+            </div>
+            
+            <div class="footer__firstinfo">
+                <p>© <span id="footer-year">2026</span> Nielshosdesign</p>
+                <p>Location: The Netherlands</p>
+            </div>
+            <div class="footer__secondinfo">
+                <p>CoC: 96591757</p>
+                <p>VAT: NL005219171B75</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Main loader -->
+    <div class="loader__wrapper" id="loader">
+        <div class="loader" aria-hidden="true">
+            <div class="loader__firstcontainer" id="loader-first">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M22.5991 6.36868V22.5987M22.5991 22.5987H6.36901M22.5991 22.5987L1.5 1.5" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <div class="loader__firstcontainer__text">
+                    <span class="textwrapper">
+                        <p class="pill pill--big pill--outline--white">Concept-driven</p>
+                    </span>
+                    <div>
+                        <span class="textwrapper"><span>Designer & </span></span>
+                        <span class="textwrapper"><span>Developer</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="loader__secondcontainer" id="loader-second">
+                <div class="loader__secondcontainer__imagewrapper">
+                    <img src="/assets/images/portretfoto_niels.jpeg" alt="">
+                    <div class="mask"></div>
+                </div>
+                <div class="loader__secondcontainer__textcontainer">
+                    <span class="textwrapper"><span>Hello,</span></span>
+                    <span class="textwrapper"><span>I'm Niels.</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small loader -->
+    <div class="small-loader" id="small-loader">
+        <div class="small-loader__div">
+            <div id="small-loader-color"></div>
+        </div>
+    </div>
+        
+
+    <div class="noise"></div>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="/js/loader.js"></script>
+    <script src="/js/magnetic-button.js" defer></script>
+    <script src="/js/lazy-load.js" defer></script>
+    <script src="/js/title-load.js" defer></script>
+    <script src="/js/pill-lazy-load.js" defer></script>
+    <script src="/js/footer.js" defer></script>
+    <!-- Darkmode -->
+    <script>
+        const darkmodeSwitch = document.getElementById('darkmode-switch');
+
+        if (sessionStorage.getItem('darkmode') === 'true') {
+            darkmodeSwitch.classList.add('active');
+            document.body.classList.add('darkmode');
+        }
+
+        darkmodeSwitch.addEventListener('click', () => {
+            const isActive = darkmodeSwitch.classList.toggle('active');
+            document.body.classList.toggle('darkmode', isActive);
+            sessionStorage.setItem('darkmode', isActive);
+        });
+    </script>
+
+
+    <!-- Contact button -->
+    <script>
+        document.querySelector('.contact-button').addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector('#contact');
+            if (!target) return;
+
+            lenis.scrollTo(target, { offset: 0, immediate: false });
+        });
+    </script>
+
+    <script>
+        const breakpoints = {
+            md: 768,
+            lg: 992,
+            xxl: 1400
+        };
+
+        const getRange = (width) => {
+            if (width < breakpoints.md) return 'sm';
+            if (width < breakpoints.lg) return 'md';
+            if (width < breakpoints.xxl) return 'lg';
+            return 'xxl';
+        };
+
+        let currentRange = getRange(window.innerWidth);
+
+        window.addEventListener('resize', () => {
+            const newRange = getRange(window.innerWidth);
+
+            if (newRange !== currentRange) {
+                location.reload();
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+---
+layout: layouts/base.html
+title: Orbit - Niels Hos
+
+name: Orbit - Love in Motion
+year: 2026
+featured: true
+size: medium
+
+intro_short: >
+  Graduation project focused on research, concept development, and the design of Orbit, a digital product for couples.
+
+intro: >
+  Orbit is my graduation project, developed over several months of research and exploration.
+  The project focuses on helping couples plan spontaneous dates and create shared moments together, to keep the romance in their relationship.
+  Multiple concepts were explored from different angles before arriving at the final direction shown on the website/app.
+
+categories_short:
+  - label: Research & Insights
+    color: green
+  - label: User testing
+    color: red
+  - label: Laravel
+    color: blue
+
+categories:
+  - label: Research & Insights
+    color: green
+  - label: User research
+    color: green
+  - label: Ideation
+    color: green
+  - label: Problem framing
+    color: green
+  - label: Human-centered
+    color: green
+  - label: App design
+    color: red
+  - label: UX/UI
+    color: red
+  - label: Figma
+    color: red
+  - label: User testing
+    color: red
+  - label: Logo design
+    color: red
+  - label: Laravel
+    color: blue
+  - label: Full-stack development
+    color: blue
+  - label: SEO
+    color: blue
+  - label: Databases
+    color: blue
+
+image: /assets/images/orbit/orbit-3.jpg
+external_url: https://weorbit.app
+---
+
+<div class="maincontainer project">
+	<div class="maintitlecontainer__gridwrapper maintitlecontainer__gridwrapper--page">
+		<div class="maintitlecontainer title-load">
+			<h2>
+				<span class="textwrapper"><span>{{ name }}</span></span>
+			</h2>
+		</div>
+	</div>
+	
+	
+	<div class="infocontainer lazy-load">
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Year</h2>
+			<p class="infocontainer__year">{{ year }}</p>
+		</div>
+		
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Summary</h2>
+			<p>{{ intro }}</p>
+			{% if external_url %}
+			<a href="{{ external_url }}" target="_blank" class="magnetic-button infocontainer__link" data-strength="0.25">
+				<span class="magnetic-filler magnetic-filler--red"></span>
+				<span class="magnetic-text">
+					<span class="magnetic-text-inner infocontainer__link__inner">
+						<span>Visit site</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+							<path d="M22.5991 6.36868V22.5987M22.5991 22.5987H6.36901M22.5991 22.5987L1.5 1.5" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</span>
+				</span>
+			</a>
+			{% endif %}
+		</div>
+		
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Services</h2>
+			<div class="pillcontainer">
+				{% for pill in categories %}
+				<p class="pill pill-lazy-load pill--{{ pill.color }}">{{ pill.label }}</p>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="content__fullimg lazy-load">
+			<img data-src="{{ image }}" alt="" class="lazy-load">
+		</div>
+
+    <div class="content__textblock lazy-load">
+			<h3>Research & concept development</h3>
+			<p>
+				The project started with lots of research and interviews with couples and a relationship therapist.
+        Insights from this phase led to several unique concept directions, which were tested and iterated over time.
+        This process helped shape Orbit into a focused and considered solution.
+			</p>
+		</div>
+
+		<div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/orbit/orbit-0.jpg" alt="" class="lazy-load">
+		</div>
+
+    <div class="content__textblock lazy-load">
+			<h3>Design & experience</h3>
+			<p>
+				Orbit was designed to make planning moments together feel simple and enjoyable.
+        The interface and interactions aim to support connection, without feeling forced or overly complex.
+        The final result reflects the full journey from research to concept to finished product.
+			</p>
+		</div>
+    
+		<div class="content__dualimg lazy-load">
+			<img src="/assets/images/orbit/orbit-4.jpg" alt="">
+			<img src="/assets/images/orbit/orbit-2.jpg" alt="">
+		</div>
+
+    <div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/orbit/orbit-1.jpg" alt="" class="lazy-load">
+		</div>
+	</div>
+</div>

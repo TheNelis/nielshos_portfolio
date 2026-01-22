@@ -699,7 +699,7 @@ button {
   max-height: 80vh;
   display: flex;
   gap: 0.75rem;
-  animation: caseSlider 10s linear infinite;
+  animation: caseSlider 16s linear infinite;
 }
 @media only screen and (min-width: 992px) {
   .hero__slidercontainer .sliderwrapper .slider {
@@ -1400,7 +1400,7 @@ button {
 }
 .project .content__fullimg img {
   width: 100%;
-  aspect-ratio: 5/3;
+  aspect-ratio: 15/8.5;
   object-fit: cover;
   object-position: center;
 }
@@ -1441,7 +1441,7 @@ button {
 }
 .project .content__textblock {
   padding: 7.5rem 0;
-  max-width: 450px;
+  max-width: 500px;
 }
 @media only screen and (min-width: 768px) {
   .project .content__textblock {
@@ -1450,7 +1450,7 @@ button {
 }
 @media only screen and (min-width: 992px) {
   .project .content__textblock {
-    max-width: 600px;
+    max-width: 45rem;
   }
 }
 .project .content__textblock h3 {

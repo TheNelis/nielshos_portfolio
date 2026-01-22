@@ -1,0 +1,122 @@
+---
+layout: layouts/base.html
+title: Beach Bites - Niels Hos
+
+name: Beach Bites
+year: 2025
+featured: false
+size: big
+
+intro_short: >
+  Redesigned and developed a new website for Beach Bites, with a refreshed look and a CMS for managing events and content.
+
+intro: >
+  Redesigned and developed a new website for Beach Bites, a beachside restaurant at Lutjestrand in the Netherlands.
+  Added a new, refreshing look-and-feel to better match the Beach Bites vibe.
+  The website is easier to use, manage, and find online.
+  On top of that, events and content can now be managed better through a CMS.
+
+categories_short:
+  - label: Web design & UX/UI
+    color: red
+  - label: Development
+    color: blue
+  - label: Human-centered
+    color: green
+
+categories:
+  - label: Human-centered
+    color: green
+  - label: Creative direction
+    color: green
+  - label: UX/UI
+    color: red
+  - label: Figma
+    color: red
+  - label: Web design
+    color: red
+  - label: Frontend development
+    color: blue
+  - label: SEO
+    color: blue
+  - label: CMS Integration
+    color: blue
+  - label: Animation
+    color: blue
+
+image: /assets/images/beach_bites/beachbites-0.jpg
+external_url: https://loungebeachbites.nl
+---
+
+<div class="maincontainer project">
+	<div class="maintitlecontainer__gridwrapper maintitlecontainer__gridwrapper--page">
+		<div class="maintitlecontainer title-load">
+			<h2>
+				<span class="textwrapper"><span>{{ name }}</span></span>
+			</h2>
+		</div>
+	</div>
+	
+	
+	<div class="infocontainer lazy-load">
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Year</h2>
+			<p class="infocontainer__year">{{ year }}</p>
+		</div>
+		
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Summary</h2>
+			<p>{{ intro }}</p>
+			{% if external_url %}
+			<a href="{{ external_url }}" target="_blank" class="magnetic-button infocontainer__link" data-strength="0.25">
+				<span class="magnetic-filler magnetic-filler--red"></span>
+				<span class="magnetic-text">
+					<span class="magnetic-text-inner infocontainer__link__inner">
+						<span>Visit site</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+							<path d="M22.5991 6.36868V22.5987M22.5991 22.5987H6.36901M22.5991 22.5987L1.5 1.5" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</span>
+				</span>
+			</a>
+			{% endif %}
+		</div>
+		
+		<div class="infocontainer__div">
+			<h2 class="infocontainer__subtitle">Services</h2>
+			<div class="pillcontainer">
+				{% for pill in categories %}
+				<p class="pill pill-lazy-load pill--{{ pill.color }}">{{ pill.label }}</p>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="content__fullimg lazy-load">
+			<img data-src="{{ image }}" alt="" class="lazy-load">
+		</div>
+
+		<div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/beach_bites/beachbites-2.jpeg" alt="" class="lazy-load">
+		</div>
+
+        <div class="content__textblock lazy-load">
+			<h3>Improving local search</h3>
+			<p>
+				When on their holiday, people often look for restaurants nearby.
+                The website was updated with clear pages and headings. Content was written to match these kinds of searches.
+                A Google Maps map was added, making Beach Bites easier to find for visitors.
+			</p>
+		</div>
+
+		<div class="content__dualimg lazy-load">
+			<img src="/assets/images/beach_bites/beachbites-5.jpeg" alt="">
+			<img src="/assets/images/beach_bites/beachbites-3.jpeg" alt="">
+		</div>
+
+        <div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/beach_bites/beachbites-4.jpeg" alt="" class="lazy-load">
+		</div>
+	</div>
+</div>

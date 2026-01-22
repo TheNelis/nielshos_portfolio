@@ -23,6 +23,8 @@ if (window.location.pathname == '/') {
 
     if (window.location.pathname.includes('work')) {
         color = '#00BF72';
+    } else if (window.location.pathname.includes('projects')) {
+        color = '#00BF72';
     } else if (window.location.pathname.includes('about')) {
         color = '#0C83E0';
     }

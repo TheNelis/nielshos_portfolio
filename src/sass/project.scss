@@ -136,7 +136,7 @@
 
             img {
                 width: 100%;
-                aspect-ratio: 5/3;
+                aspect-ratio: 15/8.5;
                 object-fit: cover;
                 object-position: center;
             }
@@ -182,14 +182,14 @@
 
         &__textblock {
             padding: 7.5rem 0;
-            max-width: 450px;
+            max-width: 500px;
 
             @media only screen and (min-width:v.$md){
                 margin-left: calc(((100vw - v.$unit-desktop * 4) / 34) * 2);
             }
             
             @media only screen and (min-width:v.$lg){
-                max-width: 600px;
+                max-width: 45rem;
             }
 
             h3 {

@@ -1,0 +1,107 @@
+---
+layout: layouts/base.html
+title: Tienskip - Niels Hos
+
+name: Tienskip
+year: 2025
+featured: false
+size: small
+
+intro_short: >
+  Designed posters and stickers for Tienskip's youth recruitment campaign, using the brand's red and blue colors.
+
+intro: >
+  Created posters and stickers for Tienskip, a foundation that encourages young people to get involved 
+  in local politics.
+  The posters feature vector-style illustrations, fitting on a background with Tienskip's red and blue brand colors.
+  The campaign aimed to attract more young participants and make the organization more visible.	
+
+categories_short:
+  - label: Ideation
+    color: green
+  - label: Creative direction
+    color: green
+  - label: Poster design
+    color: red
+
+categories:
+  - label: Ideation
+    color: green
+  - label: Creative direction
+    color: green
+  - label: Poster design
+    color: red
+  - label: Illustration
+    color: red
+
+image: /assets/images/tienskip/tienskip-0.jpg
+external_url:
+---
+
+<div class="maincontainer project">
+	<div class="maintitlecontainer__gridwrapper maintitlecontainer__gridwrapper--page">
+		<div class="maintitlecontainer title-load">
+			<h2>
+				<span class="textwrapper"><span>{{ name }}</span></span>
+			</h2>
+		</div>
+	</div>
+	
+	
+	<div class="infocontainer lazy-load">
+		<div>
+			<h2 class="infocontainer__subtitle">Year</h2>
+			<p class="infocontainer__year">{{ year }}</p>
+		</div>
+		
+		<div>
+			<h2 class="infocontainer__subtitle">Summary</h2>
+			<p>{{ intro }}</p>
+			{% if external_url %}
+			<a href="{{ external_url }}" target="_blank" class="magnetic-button infocontainer__link" data-strength="0.25">
+				<span class="magnetic-filler magnetic-filler--red"></span>
+				<span class="magnetic-text">
+					<span class="magnetic-text-inner infocontainer__link__inner">
+						<span>Visit site</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+							<path d="M22.5991 6.36868V22.5987M22.5991 22.5987H6.36901M22.5991 22.5987L1.5 1.5" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+					</span>
+				</span>
+			</a>
+			{% endif %}
+		</div>
+		
+		<div>
+			<h2 class="infocontainer__subtitle">Services</h2>
+			<div class="pillcontainer">
+				{% for pill in categories %}
+				<p class="pill pill-lazy-load pill--{{ pill.color }}">{{ pill.label }}</p>
+				{% endfor %}
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="content">
+		<div class="content__fullimg lazy-load">
+			<img data-src="{{ image }}" alt="" class="lazy-load">
+		</div>
+		<div class="content__fullimg lazy-load">
+			<img data-src="/assets/images/Tienskip/tienskip-1.jpg" alt="" class="lazy-load">
+		</div>
+
+		<div class="content__textblock lazy-load">
+			<h3>Stickers</h3>
+			<p>
+				For the stickers, I created original illustrations that stand out from the posters.
+        They were designed to be playful and fun, keeping the campaign approachable for young audiences.
+			</p>
+		</div>
+		
+		<div class="content__dualimg lazy-load">
+			<img src="/assets/images/Tienskip/tienskip-2.jpg" alt="">
+			<img src="/assets/images/Tienskip/tienskip-3.jpg" alt="">
+		</div>
+	</div>
+</div>

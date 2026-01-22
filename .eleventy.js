@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection("projects", collection =>
         collection.getFilteredByGlob("src/projects/**/index.html")
+        .sort((a, b) => b.data.year - a.data.year)
     );
 
 
