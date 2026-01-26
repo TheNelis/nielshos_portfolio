@@ -19,7 +19,7 @@ function SelectedWorkBlock({ title = "", text = "", image = "", url = "", pills 
                 ` : ""}
             </div>
             <div class="selectedwork-block__case__imagewrapper">
-                <img data-src="${image}" alt="" class="lazy-load">
+                <img src="${image}" alt="" class="lazy-load">
                 <div class="image-overlay">
                     <div class="button button--big">View project</div>
                 </div>

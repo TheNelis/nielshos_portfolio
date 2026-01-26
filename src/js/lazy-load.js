@@ -10,9 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
             block.classList.add('loaded');
 
             const img = block.querySelector('img.lazy-load');
-            if (img && img.dataset.src) {
-                img.src = img.dataset.src;
-                img.addEventListener('load', () => img.classList.add('loaded')); // animatie afbeelding
+            if (img) {
+                if (img.complete) {
+                    img.classList.add('loaded');
+                } else {
+                    img.addEventListener('load', () => {
+                        img.classList.add('loaded');
+                    });
+                }
             }
 
             observer.unobserve(block);

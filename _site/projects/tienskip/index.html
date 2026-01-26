@@ -132,10 +132,10 @@
 	
 	<div class="content">
 		<div class="content__fullimg lazy-load">
-			<img data-src="/assets/images/tienskip/tienskip-0.jpg" alt="" class="lazy-load">
+			<img src="/assets/images/tienskip/tienskip-0.jpg" alt="" class="lazy-load">
 		</div>
 		<div class="content__fullimg lazy-load">
-			<img data-src="/assets/images/Tienskip/tienskip-1.jpg" alt="" class="lazy-load">
+			<img src="/assets/images/Tienskip/tienskip-1.jpg" alt="" class="lazy-load">
 		</div>
 
 		<div class="content__textblock lazy-load">
@@ -291,12 +291,7 @@
             const target = document.querySelector('#contact');
             if (!target) return;
 
-            // lenis.scrollTo(target, { offset: 0, immediate: false });
-            lenis.scrollTo(lenis.limit);
-
-            setTimeout(() => {
-                lenis.scrollTo(lenis.limit);
-            }, 300);
+            lenis.scrollTo(target, { offset: 0, immediate: false });
         });
     </script>
 

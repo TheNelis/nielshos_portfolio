@@ -153,11 +153,11 @@
 	
 	<div class="content">
 		<div class="content__fullimg lazy-load">
-			<img data-src="/assets/images/beach_bites/beachbites-0.jpg" alt="" class="lazy-load">
+			<img src="/assets/images/beach_bites/beachbites-0.jpg" alt="" class="lazy-load">
 		</div>
 
 		<div class="content__fullimg lazy-load">
-			<img data-src="/assets/images/beach_bites/beachbites-2.jpeg" alt="" class="lazy-load">
+			<img src="/assets/images/beach_bites/beachbites-2.jpeg" alt="" class="lazy-load">
 		</div>
 
         <div class="content__textblock lazy-load">
@@ -175,7 +175,7 @@
 		</div>
 
         <div class="content__fullimg lazy-load">
-			<img data-src="/assets/images/beach_bites/beachbites-4.jpeg" alt="" class="lazy-load">
+			<img src="/assets/images/beach_bites/beachbites-4.jpeg" alt="" class="lazy-load">
 		</div>
 	</div>
 </div>
@@ -317,12 +317,7 @@
             const target = document.querySelector('#contact');
             if (!target) return;
 
-            // lenis.scrollTo(target, { offset: 0, immediate: false });
-            lenis.scrollTo(lenis.limit);
-
-            setTimeout(() => {
-                lenis.scrollTo(lenis.limit);
-            }, 300);
+            lenis.scrollTo(target, { offset: 0, immediate: false });
         });
     </script>
 

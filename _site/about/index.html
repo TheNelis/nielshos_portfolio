@@ -115,7 +115,7 @@
                 </p>
             </div>
             <div class="introcontainer__imagewrapper lazy-load">
-                <img data-src="/assets/images/portretfoto_niels.jpeg" alt="" class="lazy-load">
+                <img src="/assets/images/portretfoto_niels.jpeg" alt="" class="lazy-load">
             </div>
         </div>
 
@@ -357,12 +357,7 @@
             const target = document.querySelector('#contact');
             if (!target) return;
 
-            // lenis.scrollTo(target, { offset: 0, immediate: false });
-            lenis.scrollTo(lenis.limit);
-
-            setTimeout(() => {
-                lenis.scrollTo(lenis.limit);
-            }, 300);
+            lenis.scrollTo(target, { offset: 0, immediate: false });
         });
     </script>
 
