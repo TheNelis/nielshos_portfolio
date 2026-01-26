@@ -645,7 +645,8 @@
             const target = document.querySelector('#contact');
             if (!target) return;
 
-            lenis.scrollTo(target, { offset: 0, immediate: false });
+            // lenis.scrollTo(target, { offset: 0, immediate: false });
+            lenis.scrollTo(lenis.limit);
         });
     </script>
 
