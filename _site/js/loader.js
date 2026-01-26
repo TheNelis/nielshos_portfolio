@@ -12,6 +12,10 @@ if (window.location.pathname == '/') {
 
             setTimeout(function() {
                 loader.style.animation = 'loaderLeave 0.6s ease-out forwards';
+
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                }, 650);
             }, 1500);
         }, 2400);
     });
@@ -33,5 +37,9 @@ if (window.location.pathname == '/') {
 
     window.addEventListener('load', function() {
         smallLoader.style.animation = 'smallLoaderLeave 0.5s ease-out forwards';
+
+        setTimeout(function() {
+            smallLoader.style.display = 'none';
+        }, 550);
     });
 }
