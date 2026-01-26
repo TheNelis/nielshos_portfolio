@@ -301,14 +301,7 @@
             lenis.scrollTo(lenis.limit);
 
             setTimeout(() => {
-                const rect = target.getBoundingClientRect();
-                const viewportHeight = window.visualViewport?.height || window.innerHeight;
-
-                if (rect.bottom > viewportHeight) {
-                    const extra = rect.bottom - viewportHeight + 20;
-
-                    lenis.scrollTo(lenis.scroll + extra);
-                }
+                lenis.scrollTo(lenis.limit);
             }, 300);
         });
     </script>

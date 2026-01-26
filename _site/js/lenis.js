@@ -11,11 +11,11 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-// Sync Lenis & Scroltrigger
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.ticker.add((time) => {
-  lenis.raf(time * 1000); // gsap gebruikt seconds, lenis ms
+  lenis.raf(time * 1000);
 });
 
 ScrollTrigger.defaults({
