@@ -24,7 +24,7 @@ body.darkmode {
 }
 @keyframes textLoadInverse {
   to {
-    transform: translateY(110%);
+    transform: translateY(112%);
   }
 }
 @keyframes imgLoad {

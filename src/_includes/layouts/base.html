@@ -173,7 +173,18 @@
             if (!target) return;
 
             // lenis.scrollTo(target, { offset: 0, immediate: false });
-            lenis.scrollTo(lenis.limit + 500);
+            lenis.scrollTo(lenis.limit);
+
+            setTimeout(() => {
+                const rect = target.getBoundingClientRect();
+                const viewportHeight = window.visualViewport?.height || window.innerHeight;
+
+                if (rect.bottom > viewportHeight) {
+                    const extra = rect.bottom - viewportHeight + 20;
+
+                    lenis.scrollTo(lenis.scroll + extra);
+                }
+            }, 0);
         });
     </script>
 
