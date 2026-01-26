@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             observer.unobserve(block);
         });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.1 });
 
     lazyBlocks.forEach(block => observer.observe(block));
 });
