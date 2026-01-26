@@ -15,7 +15,7 @@ if (window.location.pathname == '/') {
 
                 setTimeout(function() {
                     loader.style.display = 'none';
-                }, 650);
+                }, 600);
             }, 1500);
         }, 2400);
     });
@@ -40,6 +40,6 @@ if (window.location.pathname == '/') {
 
         setTimeout(function() {
             smallLoader.style.display = 'none';
-        }, 550);
+        }, 500);
     });
 }
