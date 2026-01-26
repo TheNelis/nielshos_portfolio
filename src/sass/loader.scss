@@ -78,9 +78,19 @@
             height: 100%;
         }
 
+        .svgwrapper {
+            display: block;
+            overflow: hidden;
+        }
+
         svg {
             width: 4rem;
             height: 4rem;
+
+            transform: translateY(-100%);
+            animation: 
+                textLoad 0.5s ease forwards 0.8s,
+                textLoadInverse 0.4s ease-in forwards 1.8s;
 
             @media only screen and (min-width:v.$md){
                 width: 5rem;
@@ -89,10 +99,6 @@
 
             path {
                 stroke: v.$white;
-                transform: translateY(-100%);
-                animation: 
-                    textLoad 0.5s ease forwards 0.8s,
-                    textLoadInverse 0.4s ease-in forwards 1.8s;
             }
         }
 

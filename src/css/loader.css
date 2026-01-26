@@ -84,9 +84,15 @@ body.darkmode {
     height: 100%;
   }
 }
+.loader__firstcontainer .svgwrapper {
+  display: block;
+  overflow: hidden;
+}
 .loader__firstcontainer svg {
   width: 4rem;
   height: 4rem;
+  transform: translateY(-100%);
+  animation: textLoad 0.5s ease forwards 0.8s, textLoadInverse 0.4s ease-in forwards 1.8s;
 }
 @media only screen and (min-width: 768px) {
   .loader__firstcontainer svg {
@@ -96,8 +102,6 @@ body.darkmode {
 }
 .loader__firstcontainer svg path {
   stroke: #FFFFFF;
-  transform: translateY(-100%);
-  animation: textLoad 0.5s ease forwards 0.8s, textLoadInverse 0.4s ease-in forwards 1.8s;
 }
 .loader__firstcontainer__text div {
   margin-top: 10px;
