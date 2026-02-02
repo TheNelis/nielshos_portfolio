@@ -20,9 +20,9 @@ if (window.location.pathname == '/') {
         }, 2400);
     });
 
-    smallLoader.style.display = 'none';
 } else {
     loader.style.display = 'none';
+    smallLoader.style.display = 'block';
     let color = '#F54C52';
 
     if (window.location.pathname.includes('work')) {
