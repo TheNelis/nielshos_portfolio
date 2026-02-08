@@ -109,7 +109,11 @@ body.darkmode {
   display: flex;
   flex-wrap: wrap;
   gap: 0.375rem;
-  row-gap: 0.1875rem;
+  row-gap: 1rem;
+}
+.footer .pillcontainer div p {
+  color: #FFFFFF;
+  width: 100%;
 }
 .footer .pillcontainer div div {
   width: 100%;
